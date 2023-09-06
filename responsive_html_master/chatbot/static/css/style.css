@@ -1,0 +1,36 @@
+.titulo {
+    color: White;
+    background-color: orange; 
+    text-align: center;
+}
+
+#chat {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+#settings {
+    text-align: center;
+}
+
+#boceto {
+    width: 30px;
+    height: 30px;
+    color: pink;
+}
+
+/* fondo para el chat :v */
+#model_chat {
+    border: 1px solid #ddd; 
+    padding: 10px; 
+    margin-bottom: 10px;
+
+}
+
+
+#opcion {
+    width: 30px;
+    height: 30px;
+}

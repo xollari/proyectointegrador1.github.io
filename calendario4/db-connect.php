@@ -1,9 +1,9 @@
 <?php
 $host     = 'localhost';
-$username = 'id21118080_root2';
+$username = 'root';
 $password = '';
-$dbname   ='id21118080_prueba_proyecto_uno';
-$port = 3306; //Elimina esta linea
+$dbname   ='calendario_bd';
+$port = 3307; //Elimina esta linea
 
 $conn = new mysqli($host, $username, $password, $dbname, $port); //Elimina: , $port
 if(!$conn){
