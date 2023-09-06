@@ -32,7 +32,7 @@ if (! (isset ( $_SESSION ['login'] ))) {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>view subject</title>
+    <title>Ver Temas</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -78,7 +78,7 @@ if (! (isset ( $_SESSION ['login'] ))) {
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            View Course
+                            Ver temas
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -87,10 +87,10 @@ if (! (isset ( $_SESSION ['login'] ))) {
                                     <thead>
                                         <tr>
                                             <th>S No</th>
-                                            <th>Subject1</th>
-                                            <th>Subject2</th>
-                                            <th>Subject3</th>
-                                            <th>Action</th>
+                                            <th>Tema 1</th>
+                                            <th>Tema 2</th>
+                                            <th>Tema 3</th>
+                                            <th>Accion</th>
                                         </tr>
                                     </thead>
                                     <tbody>

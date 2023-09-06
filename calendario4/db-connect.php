@@ -1,11 +1,13 @@
 <?php
-$host     = 'localhost';
-$username = 'root';
-$password = '';
-$dbname   ='calendario_bd';
-$port = 3307; //Elimina esta linea
+$host     = 'sql306.infinityfree.com';
+$username = 'if0_34977783';
+$password = '7Ze4DL43wfsyho';
+$dbname   ='if0_34977783_dbunfv';
 
-$conn = new mysqli($host, $username, $password, $dbname, $port); //Elimina: , $port
-if(!$conn){
-    die("Cannot connect to the database.". $conn->error);
-}
+$conn=mysqli_connect($host, $username, $password, $dbname);
+  
+  if(!$conn){
+    die("Connection failed". mysqli_connect_error());
+    }
+?>    
+   

@@ -62,7 +62,7 @@ if (! (isset ( $_SESSION ['login'] ))) {
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            View Students
+                            Ver Estudiantes
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -72,12 +72,12 @@ if (! (isset ( $_SESSION ['login'] ))) {
                                         <tr>
                                             <th>SNo</th>
 											<th>RegNo</th>
-											<th>Name</th>
-                                            <th>Email</th>
+											<th>Nombre</th>
+                                            <th>Correo</th>
                                             <th>MobNO</th>
-											<th>Course</th>
-											<th>Subject</th>
-                                            <th>Action</th>
+											<th>Curso</th>
+											<th>Asunto</th>
+                                            <th>Accion</th>
                                         </tr>
                                     </thead>
                                     <tbody>

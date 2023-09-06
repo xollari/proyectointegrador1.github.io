@@ -1,8 +1,8 @@
 <?php
-$dbuser="root";
-$dbpass="";
-$host="localhost";
-$dbname = "schoolmanagement";
+$dbuser="if0_34977783";
+$dbpass="7Ze4DL43wfsyho";
+$host="sql306.infinityfree.com";
+$dbname = "if0_34977783_dbunfv";
 $mysqli = new mysqli($host, $dbuser, $dbpass, $dbname);
 if(!empty($_POST['cshort'])){
 $cshort=$_POST['cshort'];

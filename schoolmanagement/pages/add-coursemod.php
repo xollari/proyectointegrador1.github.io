@@ -1,22 +1,6 @@
 
 
-<?php
-session_start ();
 
-if (! (isset ( $_SESSION ['login'] ))) {
-	
-	header ( 'location:../index.php' );
-}
-
-if(isset($_POST['submit'])){
-	
-	include('../config/DbFunction.php');
-	$obj=new DbFunction();
-	$obj->create_course($_POST['course-short'],$_POST['course-full'],$_POST['cdate']);
-	
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -56,7 +40,7 @@ if(isset($_POST['submit'])){
 		<div id="page-wrapper">
 			<div class="row">
 				<div class="col-lg-12">
-					<h4 class="page-header"> <?php echo strtoupper("Bienvenido"." ".htmlentities($_SESSION['login']));?></h4>
+					<h4 class="page-header"> <?php echo strtoupper("Bienvenido");?></h4>
 				</div>
 				<!-- /.col-lg-12 -->
 			</div>
@@ -84,7 +68,7 @@ if(isset($_POST['submit'])){
 								
 		<div class="form-group">
 		<div class="col-lg-4">
-		<label>Nombre Completo del curso<span id="" style="font-size:11px;color:red">*</span></label>
+		<label>Curso Completo<span id="" style="font-size:11px;color:red">*</span></label>
 		</div>
 		<div class="col-lg-6">
 		<input class="form-control" name="course-full" id="cfull" required="required"  onblur="coursefullAvail()">         

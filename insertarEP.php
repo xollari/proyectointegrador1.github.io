@@ -36,6 +36,7 @@
       ?>
       <style>
         .SuccessMsj{
+          font-family: Helvetica;
           text-align: center;
           color: green;
 
@@ -52,6 +53,7 @@
       ?>
       <style>
         .ErrorMsj{
+          font-family: Helvetica;
           text-align: center;
           color: red;
 

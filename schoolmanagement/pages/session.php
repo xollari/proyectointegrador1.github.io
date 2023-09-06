@@ -45,7 +45,7 @@ if (! (isset ( $_SESSION ['login'] ))) {
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                   <h4 class="page-header"> <?php echo strtoupper("welcome"." ".htmlentities($_SESSION['login']));?></h4>
+                   <h4 class="page-header"> <?php echo strtoupper("Bienvenido"." ".htmlentities($_SESSION['login']));?></h4>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -54,7 +54,7 @@ if (! (isset ( $_SESSION ['login'] ))) {
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            View Session
+                            Ver Sesion
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -63,7 +63,7 @@ if (! (isset ( $_SESSION ['login'] ))) {
 		    
 			
 			 <div class="col-lg-2">
-			<label>Session<span id="" style="font-size:11px;color:red">*</span></label>
+			<label>Sesion<span id="" style="font-size:11px;color:red">*</span></label>
 			
 			</div>
                   <div class="col-lg-4">

@@ -2,10 +2,10 @@
 class Database {
 	private $_connection;
 	private static $_instance; //The single instance
-	private $_host = "localhost";
-	private $_username = "root";
-	private $_password = "";
-	private $_database = "schoolmanagement";
+	private $_host = "sql306.infinityfree.com";
+	private $_username = "if0_34977783";
+	private $_password = "7Ze4DL43wfsyho	";
+	private $_database = "if0_34977783_dbunfv";
 	/*
 	Get an instance of the Database
 	@return Instance

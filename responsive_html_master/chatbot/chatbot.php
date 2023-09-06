@@ -1,29 +1,31 @@
 
 <?php
 // Configura la conexión a la base de datos MySQL
-$servername = "localhost";
-$username = "root";
-$password = "Geral@123";
-$dbname = "chatbot_pi";
+$servername = 'sql306.infinityfree.com';
+$username = 'if0_34977783';
+$password = '7Ze4DL43wfsyho';
+$dbname = 'if0_34977783_dbunfv';
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Verifica la conexión a la base de datos
-if ($conn->connect_error) {
-    die("Error de conexión: " . $conn->connect_error);
-}
+$conn=mysqli_connect($servername, $username, $password, $dbname);
+  
+  if(!$conn){
+    die("Connection failed". mysqli_connect_error());
+  }
 
 // Función para obtener la respuesta del chatbot
 function getBotResponse($userMessage) {
     // Implementa la lógica del chatbot aquí
     // Este es solo un ejemplo muy simple
     $responses = [
-        "" => "Por favor agrega un caracter",
+        "" => "Por favor escribe Hola para iniciar una conversacion",
         "Hola" => "¡Hola! ¿En qué puedo ayudarte?",
         "Describeme el proyecto" => "Esta pagina se encarga de poder reservar y matricular a los alumnos de la facultad de ingeniería 
         electrónica e informatica (FIEI)",
         "Puedes contactar con el responsable" => "Por el momento no, esta aplicación aun está en proceso de escalabilidad",
-        "Mencioname a los responsables"=> "loa integrantes del grupo son Sam, Bonifaz, Wari, Avalos, Joshep, Zummy, TIcona y Geral",
+        "Mencioname a los responsables"=> "Los integrantes del grupo son Sam, Bonifaz, Huari, Avalos, Joshep, Zummy, Ticona y Geral",
         "Tengo un problema"=> "Por el momento no puedo ser de ayuda, puedes  contactar con este correo para comunicarte con los desarrolladores gerallujan0721@gmail.com"
     ];
 

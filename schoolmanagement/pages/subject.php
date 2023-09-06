@@ -5,7 +5,7 @@ if(!empty($_POST["id"]))
  $id=intval($_POST['id']);
  $stmt = $DB_con->prepare("SELECT * FROM states WHERE country_id = :id");
  $stmt->execute(array(':id' => $id));
- ?><option selected="selected">Select State</option><?php
+ ?><option selected="selected">Seleccionar Cuidad</option><?php
  while($row=$stmt->fetch(PDO::FETCH_ASSOC))
  {
   ?>
@@ -22,7 +22,7 @@ if(!empty($_POST["did"]))
  $id=intval($_POST['did']);
  $stmt = $DB_con->prepare("SELECT * FROM cities WHERE state_id = :id");
  $stmt->execute(array(':id' => $id));
- ?><option value="">Select City</option><?php
+ ?><option value="">Seleccionar cuidad</option><?php
  while($row=$stmt->fetch(PDO::FETCH_ASSOC))
  {
   ?>

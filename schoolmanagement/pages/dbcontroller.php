@@ -1,8 +1,8 @@
 <?php
-$DB_host = "localhost";
-$DB_user = "root";
-$DB_pass = "";
-$DB_name = "schoolmanagement";
+$DB_host = "sql306.infinityfree.com";
+$DB_user = "if0_34977783";
+$DB_pass = "7Ze4DL43wfsyho";
+$DB_name = "if0_34977783_dbunfv";
 try
 {
  $DB_con = new PDO("mysql:host={$DB_host};dbname={$DB_name}",$DB_user,$DB_pass);

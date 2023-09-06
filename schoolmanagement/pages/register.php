@@ -35,7 +35,7 @@ include('../config/DbFunction.php');
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
-<title>register</title>
+<title>Registro</title>
 <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css"
 	rel="stylesheet">
 <link href="../bower_components/metisMenu/dist/metisMenu.min.css"
@@ -68,7 +68,7 @@ include('../config/DbFunction.php');
 			<div class="col-lg-10">
 			<div class="form-group">
 		    <div class="col-lg-4">
-			<label>Select Course<span id="" style="font-size:11px;color:red">*</span>	</label>
+			<label>Seleccionar curso<span id="" style="font-size:11px;color:red">*</span>	</label>
 			</div>
 			<div class="col-lg-6">
 <select class="form-control" name="course-short" id="cshort"  onchange="showSub(this.value)" required="required" >			
@@ -87,7 +87,7 @@ include('../config/DbFunction.php');
 								
 		<div class="form-group">
 		<div class="col-lg-4">
-		<label>Select Subject<span id="" style="font-size:11px;color:red">*</span></label>
+		<label>Seleccionar Asunto<span id="" style="font-size:11px;color:red">*</span></label>
 		</div>
 		<div class="col-lg-6">
  <input class="form-control" name="c-full"  id="c-full" >
@@ -99,7 +99,7 @@ include('../config/DbFunction.php');
 			
 			<div class="form-group">
 		<div class="col-lg-4">
-		<label>Current  Session<span id="" style="font-size:11px;color:red">*</span></label>
+		<label>Ciclo actual<span id="" style="font-size:11px;color:red">*</span></label>
 		</div>
 		<div class="col-lg-6">
 		
@@ -125,20 +125,20 @@ include('../config/DbFunction.php');
 			<div class="row">
 			<div class="col-lg-12">
 			<div class="panel panel-default">
-			<div class="panel-heading">Personal Informations</div>
+			<div class="panel-heading">Informacion Personal </div>
 			<div class="panel-body">
 			<div class="row">
 			<div class="col-lg-12">
 			<div class="form-group">
 		    <div class="col-lg-2">
-			<label>First Name<span id="" style="font-size:11px;color:red">*</span>	</label>
+			<label>Primer nombre<span id="" style="font-size:11px;color:red">*</span>	</label>
 			
 			</div>
 			<div class="col-lg-4">
 			<input class="form-control" name="fname" required="required" pattern="[A-Za-z]+$">
 			</div>
 			 <div class="col-lg-2">
-			<label>Middle Name</label>
+			<label>segundo nombre</label>
 			
 			</div>
 			<div class="col-lg-4">
@@ -149,32 +149,32 @@ include('../config/DbFunction.php');
 								
 		<div class="form-group">
 		    <div class="col-lg-2">
-			<label>Last Name</label>
+			<label>Apellidos</label>
 			</div>
 			<div class="col-lg-4">
 			<input class="form-control" name="lname" pattern="[A-Za-z]+$">
 			</div>
 			 <div class="col-lg-2">
-			<label>Gender</label>
+			<label>Genero</label>
 			
 			</div>
 			<div class="col-lg-4">
-		 <input type="radio" name="gender" id="male" value="Male"> &nbsp; Male &nbsp;
-		 <input type="radio" name="gender" id="female" value="feale"> &nbsp; Female &nbsp;
-		 <input type="radio" name="gender" id="other" value="other"> &nbsp; Other &nbsp;
+		 <input type="radio" name="gender" id="male" value="Male"> &nbsp; Masculino &nbsp;
+		 <input type="radio" name="gender" id="female" value="feale"> &nbsp; Femenino &nbsp;
+		 <input type="radio" name="gender" id="other" value="other"> &nbsp; Otro &nbsp;
 			</div>
 			</div>	
 	<br><br>		
 		     <div class="form-group">
 			 <div class="col-lg-2">
-			<label>Guardian Name<span id="" style="font-size:11px;color:red">*</span>	</label>
+			<label>Nombre del Docente<span id="" style="font-size:11px;color:red">*</span>	</label>
 			
 			</div>
 			<div class="col-lg-4">
 			<input class="form-control" name="gname" required="required" pattern="[A-Za-z]+$">
 			</div>
 			 <div class="col-lg-2">
-			<label>Occupation</label>
+			<label>Ocupacion</label>
 			
 			</div>
 			<div class="col-lg-4">
@@ -185,7 +185,7 @@ include('../config/DbFunction.php');
 					
 		     <div class="form-group">
 			 <div class="col-lg-2">
-			<label>Family Income<span id="" style="font-size:11px;color:red">*</span></label>
+			<label>Ingresos Familiares<span id="" style="font-size:11px;color:red">*</span></label>
 			
 			</div>
 			<div class="col-lg-4">
@@ -198,7 +198,7 @@ include('../config/DbFunction.php');
        </select>
 			</div>
 			 <div class="col-lg-2">
-			<label>Category<span id="" style="font-size:11px;color:red">*</span></label>
+			<label>Categoria<span id="" style="font-size:11px;color:red">*</span></label>
 			
 			</div>
 			<div class="col-lg-4">
@@ -218,19 +218,19 @@ include('../config/DbFunction.php');
 					
 		     <div class="form-group">
 			 <div class="col-lg-2">
-			<label>Physically Challenged<span id="" style="font-size:11px;color:red">*</span></label>
+			<label>Discapacidad Fisica<span id="" style="font-size:11px;color:red">*</span></label>
 			
 			</div>
 			<div class="col-lg-4">
 			<select class="form-control" name="ph"  id="ph"required="required" >
         <option VALUE="">SELECT</option>
-        <option VALUE="yes">Yes</option>
+        <option VALUE="yes">Si</option>
         <option value="no">No</option>
                
        </select>
 			</div>
 			 <div class="col-lg-2">
-			<label>Nationality<span id="" style="font-size:11px;color:red">*</span></label>
+			<label>Nacionalidad<span id="" style="font-size:11px;color:red">*</span></label>
 			
 			</div>
 			<div class="col-lg-4">
@@ -247,20 +247,20 @@ include('../config/DbFunction.php');
 		<div class="row">
 			<div class="col-lg-12">
 			<div class="panel panel-default">
-			<div class="panel-heading">Contact Informations</div>
+			<div class="panel-heading">Informacion de contacto</div>
 			<div class="panel-body">
 			<div class="row">
 			<div class="col-lg-12">
 			<div class="form-group">
 		    <div class="col-lg-2">
-			<label>Mobile Number<span id="" style="font-size:11px;color:red">*</span>	</label>
+			<label>Numero de telefono<span id="" style="font-size:11px;color:red">*</span>	</label>
 			
 			</div>
 			<div class="col-lg-4">
 			<input class="form-control" type="number" name="mobno" required="required" maxlength="10">
 			</div>
 			 <div class="col-lg-2">
-			<label>Email Id</label>
+			<label>Corrreo Electronico</label>
 			
 			</div>
 			<div class="col-lg-4">
@@ -271,11 +271,11 @@ include('../config/DbFunction.php');
 								
 		<div class="form-group">
 		    <div class="col-lg-2">
-			<label>Country</label>
+			<label>Pais</label>
 			</div>
 			<div class="col-lg-4">
 			<select class="form-control" name="country" id="country" onchange="showState(this.value)" required="required" >			
-<option VALUE="">Select Country</option>
+<option VALUE="">Seleccionar pais</option>
 				<?php while($res=$rs1->fetch_object()){?>							
 			
    <option VALUE="<?php echo htmlentities($res->id);?>"><?php echo htmlentities($res->name)?></option>
@@ -284,12 +284,12 @@ include('../config/DbFunction.php');
                     <?php }?>   </select>
 			</div>
 			 <div class="col-lg-2">
-			<label>State</label>
+			<label>Distrito</label>
 			
 			</div>
 			<div class="col-lg-4">
  <select name="state" id="state"  class="form-control" onchange="showDist(this.value)" required="required">
-        <option value="">Select State</option>
+        <option value="">Seleccionar distrito</option>
         </select>
 			</div>
 			
@@ -298,16 +298,16 @@ include('../config/DbFunction.php');
 	<br><br><br><br>		
 		     <div class="form-group">
 			 <div class="col-lg-2">
-			<label>City<span id="" style="font-size:11px;color:red">*</span>	</label>
+			<label>Ciudad<span id="" style="font-size:11px;color:red">*</span>	</label>
 			
 			</div>
 			<div class="col-lg-4">
            <select name="city" id="dist"  class="form-control" onchange="" required="required">
-        <option value="">Select City</option>
+        <option value="">Seleccione su cuidad</option>
 		</select>
 			</div>
 			 <div class="col-lg-2">
-			<label>Permanent Address<span id="" style="font-size:11px;color:red">*</span></label>
+			<label>Direccion de domicilio<span id="" style="font-size:11px;color:red">*</span></label>
 			
 			</div>
 			<div class="col-lg-4">
@@ -323,7 +323,7 @@ include('../config/DbFunction.php');
 					
 		     <div class="form-group">
 			 <div class="col-lg-2">
-			<label>Correspondence Address<span id="" style="font-size:11px;color:red">*</span>
+			<label>Otras direcciones<span id="" style="font-size:11px;color:red">*</span>
 			
 			</div>
 			<div class="col-lg-4">
@@ -349,7 +349,7 @@ include('../config/DbFunction.php');
         <div class="row">
 			<div class="col-lg-12">
 			<div class="panel panel-default">
-			<div class="panel-heading">Academic Informations</div>
+			<div class="panel-heading">Informacion Academica</div>
 			<div class="panel-body">
 			<div class="row">
 			
@@ -369,7 +369,7 @@ include('../config/DbFunction.php');
 			<th>&nbsp;&nbsp;&nbsp;&nbsp;Roll No</th>
 			</div>   
               <div class="col-lg-6">
-			 <th>&nbsp;&nbsp;&nbsp;&nbsp;Year Of Passing<span id="" style="font-size:11px;color:red">*</span></th>
+			 <th>&nbsp;&nbsp;&nbsp;&nbsp;Año al que pasa<span id="" style="font-size:11px;color:red">*</span></th>
 			</div>                                 
             </tr>
                                     </thead>
@@ -425,13 +425,13 @@ include('../config/DbFunction.php');
 			<th>S.No</th>
 			</div>   
             <div class="col-lg-6">
-			<th>&nbsp;&nbsp;&nbsp;&nbsp;Subject</th>
+			<th>&nbsp;&nbsp;&nbsp;&nbsp;Asuntos</th>
 			</div>   
               <div class="col-lg-6">
-			 <th>&nbsp;&nbsp;&nbsp;&nbsp;Marks Obtained</th>
+			 <th>&nbsp;&nbsp;&nbsp;&nbsp;Nota obtenida</th>
 			</div>                                 
              <div class="col-lg-6">
-			   <th>&nbsp;&nbsp;&nbsp;&nbsp;Full Marks</th>
+			   <th>&nbsp;&nbsp;&nbsp;&nbsp;Maxima nota</th>
 			</div>                               
                                         </tr>
                                     </thead>

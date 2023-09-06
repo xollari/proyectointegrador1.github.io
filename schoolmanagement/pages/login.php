@@ -44,8 +44,8 @@ if(isset($_POST['submit'])){
 
 </head>
 
-<body>
- <h2 align="center">Student Record Management System</h2>
+<body >
+ <h2 align="center">Bienvenido </h2>
     <div class="container">
         <br><br><br><br>
 
@@ -60,14 +60,16 @@ if(isset($_POST['submit'])){
                         <form method="post">
                             <fieldset>
                                 <div class="form-group">
-             <input class="form-control" placeholder="Login Id"  id="id"name="id" type="text" autofocus autocomplete="off">
+             <input class="form-control" placeholder="Usuario"  id="id"name="id" type="text" autofocus autocomplete="off">
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Password" id="password"name="password" type="password" value="">
+                                    <input class="form-control" placeholder="Contraseña" id="password"name="password" type="password" value="">
                                 </div>
                               
                                 <!-- Change this to a button or input when using this as a form -->
                                 <input type="submit" value="login" name="submit" class="btn btn-lg btn-success btn-block">
+                                <br>
+                                <a href="../../index.html">Volver a Inicio </a>
                             </fieldset>
                         </form>
                     </div>

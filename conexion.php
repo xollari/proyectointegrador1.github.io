@@ -2,10 +2,10 @@
   
 
   // Data 
-  $DBhostname = 'localhost';  
-  $DBusername = 'id21118080_root2';
-  $DBpassword = ''; 
-  $DBname = 'id21118080_prueba_proyecto_uno';
+  $DBhostname = 'sql306.infinityfree.com';  
+  $DBusername = 'if0_34977783';
+  $DBpassword = '7Ze4DL43wfsyho'; 
+  $DBname = 'if0_34977783_dbunfv';
   
 
 
